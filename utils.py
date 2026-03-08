@@ -1,7 +1,7 @@
 import numpy as np
 
 def calculate_metrics(t, v, v_ref, start_idx=0):
-    # Dilimleme (belirli bir zaman aralığı için metrik hesaplamak gerekebilir)
+    # Dilimleme ve sadece ilgili bölümü kullanma
     t_slice = t[start_idx:]
     v_slice = v[start_idx:]
     
